@@ -1,15 +1,20 @@
+import { ActionType } from "./const";
+
 export interface CartData {
-    surname: string,
-    name: string,
-    number: string,
-    adress: string,
-    position: string,
-    logoId: string,
-    logoPosition: Position,
-    infoPosition: Position
+  surname: string;
+  name: string;
+  number: string;
+  adress: string;
+  position: string;
+  logoId: string;
+  logoPosition: Position;
+  infoPosition: Position;
 }
 
-export type FormAction = {type: 'CHANGE_SETTING', settingName:string, value:string} |
-                         {type: 'CLEAR_ALL_SETTINGS'};
+export type FormAction = {
+  type: ActionType.CHANGE_SETTING;
+  settingName: string;
+  value: string;
+};
 
-export type Position = 'left' | 'right' | 'center';
+export type Position = "left" | "right" | "center";

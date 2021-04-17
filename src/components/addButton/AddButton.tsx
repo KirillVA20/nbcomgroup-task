@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import { useState } from "react";
+import { CartOrderTimer } from "../../const";
 
 interface AddButtonProps {
-    name:string ,
-    number:string ,
-    adress:string ,
+  name: string;
+  number: string;
+  adress: string;
 }
-
 
 /**
  * Компонент имитации оформления визитки
@@ -13,46 +13,44 @@ interface AddButtonProps {
  * @param {string} number - Номер телефона
  * @param {string} adress - Адресс
  */
-function AddButton({
-    name,
-    number,
-    adress,
-}:AddButtonProps) {
-    //Состояние отвечающие за статус оформления визитки
-    const [cartIsOrder, setCartIsOrder] = useState(false);
+const AddButton = ({ name, number, adress }: AddButtonProps) => {
+  //Состояние отвечающие за статус оформления визитки
+  const [cartIsOrder, setCartIsOrder] = useState(false);
 
-    //Проверка на пустоту данных
-    const checkEmptySetting = () => {
-        return !!name && !!number && !!adress;
-    }
+  //Проверка на пустоту данных
+  const checkEmptySetting = () => {
+    return !!name && !!number && !!adress;
+  };
 
-    //Имитация оформления визитки
-    const orderCart = () => {
-        setCartIsOrder(true);
-        setTimeout(() => setCartIsOrder(false), 3000);
-    }
+  //Имитация оформления визитки
+  const orderCart = () => {
+    setCartIsOrder(true);
+    setTimeout(() => setCartIsOrder(false), CartOrderTimer);
+  };
 
-    //Класс активности кнопки оформления
-    const addButtonClassName = (!checkEmptySetting()) 
-                                    ? 'add-button__button--blocked' 
-                                    : '';
+  //Класс активности кнопки оформления
+  const addButtonClassName = !checkEmptySetting()
+    ? "add-button__button--blocked"
+    : "";
 
-    return <section className="add-button">
-                <div className="add-button__container">
-                    {(!cartIsOrder) 
-                        ? <button className={`add-button__button ${addButtonClassName}`}
-                                onClick={() => orderCart()}
-                        >
-                            Оформить
-                        </button>
-                        : <div className="add-button__message">
-                            <span>
-                                Спасибо, когда-нибудь мы оформим вашу визитку...
-                            </span>
-                          </div>
-                    }
-                </div>
-           </section>
-}
+  return (
+    <section className="add-button">
+      <div className="add-button__container">
+        {!cartIsOrder ? (
+          <button
+            className={`add-button__button ${addButtonClassName}`}
+            onClick={() => orderCart()}
+          >
+            Оформить
+          </button>
+        ) : (
+          <div className="add-button__message">
+            <span>Спасибо, когда-нибудь мы оформим вашу визитку...</span>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+};
 
 export default AddButton;
