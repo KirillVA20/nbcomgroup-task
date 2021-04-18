@@ -11,11 +11,11 @@ interface FormSelectProps {
 
 /**
  * Компонент с выбором настройки
- * @param {string} settingName - Имя настройки
- * @param {string} variants - Варианты настройки
- * @param {string} variantsLang - Перевод вариантов настройки
- * @param {string} value - Значение настройки
- * @param {string} title - Текст для заголовка
+ * @param settingName - Имя настройки
+ * @param variants - Варианты настройки
+ * @param variantsLang - Перевод вариантов настройки
+ * @param value - Значение настройки
+ * @param title - Текст для заголовка
  */
 const FormSelect = ({
   changeSetting,

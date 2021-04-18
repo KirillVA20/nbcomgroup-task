@@ -11,14 +11,14 @@ type FormProps = CartData & StateActionProps;
 
 /**
  * Форма настройки и изменения данных визитки
- * @param {string} surname - Фамилия
- * @param {string} name - Имя
- * @param {string} number - Номер телефона
- * @param {string} adress - Адресс
- * @param {string} position - Должность
- * @param {string} logoId - id логотипа
- * @param {string} logoPosition - Позиционирование логотипа
- * @param {string} infoPosition - Похиционирование текста
+ * @param surname - Фамилия
+ * @param name - Имя
+ * @param number - Номер телефона
+ * @param adress - Адресс
+ * @param position - Должность
+ * @param logoId - id логотипа
+ * @param logoPosition - Позиционирование логотипа
+ * @param infoPosition - Похиционирование текста
  */
 const Form = ({
   changeSetting,

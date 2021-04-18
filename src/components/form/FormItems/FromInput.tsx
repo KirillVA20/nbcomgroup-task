@@ -10,10 +10,10 @@ interface FormInputProps {
 
 /**
  * Компонент обыкновенной настройки
- * @param {string} settingName - Имя настройки
- * @param {string} settingNameLang - Имя-перевод
- * @param {string} value - Значение настройки
- * @param {string} placeholder - Текст для плейсхолдера
+ * @param settingName - Имя настройки
+ * @param settingNameLang - Имя-перевод
+ * @param value - Значение настройки
+ * @param placeholder - Текст для плейсхолдера
  */
 const FormInput = ({
   changeSetting,

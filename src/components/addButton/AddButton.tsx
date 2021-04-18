@@ -9,9 +9,9 @@ interface AddButtonProps {
 
 /**
  * Компонент имитации оформления визитки
- * @param {string} name - Имя
- * @param {string} number - Номер телефона
- * @param {string} adress - Адресс
+ * @param name - Имя
+ * @param number - Номер телефона
+ * @param adress - Адресс
  */
 const AddButton = ({ name, number, adress }: AddButtonProps) => {
   //Состояние отвечающие за статус оформления визитки
@@ -38,8 +38,9 @@ const AddButton = ({ name, number, adress }: AddButtonProps) => {
       <div className="add-button__container">
         {!cartIsOrder ? (
           <button
+            type="button"
             className={`add-button__button ${addButtonClassName}`}
-            onClick={() => orderCart()}
+            onClick={orderCart}
           >
             Оформить
           </button>

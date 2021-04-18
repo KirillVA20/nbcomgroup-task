@@ -16,8 +16,8 @@ interface FormSelectIconProps {
 
 /**
  * Компонент с выбором настройки
- * @param {string} settingName - Имя настройки
- * @param {string} value - Значение настройки
+ * @param settingName - Имя настройки
+ * @param value - Значение настройки
  */
 const FormSelectIconProps = ({
   changeSetting,

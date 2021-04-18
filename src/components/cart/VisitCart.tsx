@@ -13,14 +13,14 @@ type VisitCartProps = CartData;
 /**
  * Компонент-карточка, на котором будет выводится все
  * данные и настройки
- * @param {string} surname - Фамилия
- * @param {string} name - Имя
- * @param {string} number - Номер телефона
- * @param {string} adress - Адресс
- * @param {string} position - Должность
- * @param {string} logoId - id логотипа
- * @param {string} logoPosition - Позиционирование логотипа
- * @param {string} infoPosition - Позиционирование текста
+ * @param surname - Фамилия
+ * @param name - Имя
+ * @param number - Номер телефона
+ * @param adress - Адресс
+ * @param position - Должность
+ * @param logoId - id логотипа
+ * @param logoPosition - Позиционирование логотипа
+ * @param infoPosition - Позиционирование текста
  */
 const VisitCart = ({
   name,
