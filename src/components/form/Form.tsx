@@ -32,6 +32,38 @@ const Form = ({
   logoPosition,
   infoPosition,
 }: FormProps) => {
+  //Массив с данными для корректного вывода полей настроек
+  const FormInputNames = [
+    { 
+      value: name, 
+      name: "name", 
+      lang: "Имя", 
+      placheholder: "Введите имя" },
+    {
+      value: surname,
+      name: "surname",
+      lang: "Фамилия",
+      placheholder: "Введите фамилию",
+    },
+    {
+      value: number,
+      name: "number",
+      lang: "Номер телефона",
+      placheholder: "Введите номер",
+    },
+    {
+      value: position,
+      name: "position",
+      lang: "Должность",
+      placheholder: "Введите должность",
+    },
+    {
+      value: adress,
+      name: "adress",
+      lang: "Адрес",
+      placheholder: "Введите адрес",
+    },
+  ];
   return (
     <section className="form">
       <div className="form__container">
@@ -41,46 +73,16 @@ const Form = ({
             <div className="form__inner">
               {/* Блок с быкновенными полями ввода */}
               <div className="form__inputs">
-                <FormInput
-                  settingName="name"
-                  settingNameLang="Имя"
-                  value={name}
-                  placeholder="Введите имя"
-                  changeSetting={changeSetting}
-                  key="name"
-                />
-                <FormInput
-                  settingName="surname"
-                  settingNameLang="Фамилия"
-                  value={surname}
-                  placeholder="Введите фамилию"
-                  changeSetting={changeSetting}
-                  key="surname"
-                />
-                <FormInput
-                  settingName="number"
-                  settingNameLang="Номер телефона"
-                  value={number}
-                  placeholder="Номер телефона"
-                  changeSetting={changeSetting}
-                  key="number"
-                />
-                <FormInput
-                  settingName="position"
-                  settingNameLang="Должность"
-                  value={position}
-                  placeholder="Введите должность"
-                  changeSetting={changeSetting}
-                  key="position"
-                />
-                <FormInput
-                  settingName="adress"
-                  settingNameLang="Адрес"
-                  value={adress}
-                  placeholder="Введите адрес"
-                  changeSetting={changeSetting}
-                  key="adress"
-                />
+                {FormInputNames.map((setting, index) => (
+                  <FormInput
+                    settingName={setting.name}
+                    settingNameLang={setting.lang}
+                    value={setting.value}
+                    placeholder={setting.placheholder}
+                    changeSetting={changeSetting}
+                    key={index}
+                  />
+                ))}
               </div>
 
               {/* Блок с настройкой-списком иконок */}
@@ -114,11 +116,7 @@ const Form = ({
                 />
               </div>
             </div>
-            <AddButton 
-              name={name} 
-              number={number} 
-              adress={adress} 
-            />
+            <AddButton name={name} number={number} adress={adress} />
           </fieldset>
         </form>
       </div>
