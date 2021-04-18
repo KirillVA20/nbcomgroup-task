@@ -1,10 +1,9 @@
-import { ActionType } from "./const";
 
 export interface CartData {
   surname: string;
   name: string;
   number: string;
-  adress: string;
+  address: string;
   position: string;
   logoId: string;
   logoPosition: Position;
@@ -12,7 +11,7 @@ export interface CartData {
 }
 
 export type FormAction = {
-  type: ActionType.CHANGE_SETTING;
+  type: string;
   settingName: string;
   value: string;
 };

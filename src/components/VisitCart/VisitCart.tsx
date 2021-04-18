@@ -48,14 +48,14 @@ const VisitCart = ({
     <section className="visit-cart">
       <div className="visit-cart__content">
         {/* Логотип */}
-        <div className={`visit-cart__logo visit-cart__logo_${logoPosition}`}>
+        <div className={`visit-cart__logo visit-cart__logo_position_${logoPosition}`}>
           <div className="visit-cart__logo-inner">
             <FontAwesomeIcon icon={iconsObj[logoId]} />
           </div>
         </div>
 
         {/* Информация */}
-        <div className={`visit-cart__info visit-cart__info_${infoPosition}`}>
+        <div className={`visit-cart__info visit-cart__info__position_${infoPosition}`}>
           {/* Имя и фамилия */}
           <div className="visit-cart__fullname">
             <span className="visit-cart__name">{name}</span>
