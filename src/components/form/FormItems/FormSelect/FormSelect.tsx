@@ -43,7 +43,7 @@ const FormSelect = ({
     for (let i = 0; i < variantsArr.length; i++) {
       const variant = variantsArr[i],
         variantLang = variantsLangArr[i],
-        activeClassName = variant === value ? "form-select__item--active" : "";
+        activeClassName = variant === value ? "form-select__item_active" : "";
 
       const option = (
         <div

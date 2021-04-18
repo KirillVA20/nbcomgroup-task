@@ -26,15 +26,15 @@
         height: 40%;
         transition: all .3s;
 
-        &--left {
+        &_left {
             justify-content: flex-start;
         }
 
-        &--center {
+        &_center {
             justify-content: center;
         }
 
-        &--right {
+        &_right {
             justify-content: flex-end;
         }
 
@@ -57,15 +57,15 @@
         color: #fff;
         transition: all .3s;
 
-        &--left {
+        &_left {
             align-items: flex-start;
         }
 
-        &--center {
+        &_center {
             align-items: center;
         }
 
-        &--right {
+        &_right {
             align-items: flex-end;
         }
     }

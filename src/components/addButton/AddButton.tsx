@@ -31,7 +31,7 @@ const AddButton = ({ name, number, adress }: AddButtonProps) => {
 
   //Класс активности кнопки оформления
   const addButtonClassName = !checkEmptySetting()
-    ? "add-button__button--blocked"
+    ? "add-button__button_blocked"
     : "";
 
   return (

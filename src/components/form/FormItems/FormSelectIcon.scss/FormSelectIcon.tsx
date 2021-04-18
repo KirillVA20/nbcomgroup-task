@@ -47,7 +47,7 @@ const FormSelectIconProps = ({
     Object.keys(iconsObj).forEach((icon, index) => {
       //Если вариант равен значению настройки -
       //делаем его активным
-      const activeClass = icon === value ? "form-icons__item--active" : "";
+      const activeClass = icon === value ? "form-icons__item_active" : "";
 
       const iconButton = (
         <li
