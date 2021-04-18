@@ -1,3 +1,4 @@
+import './FormSelect.scss';
 import { ReactNode } from "react";
 
 interface FormSelectProps {

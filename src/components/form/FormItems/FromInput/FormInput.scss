@@ -1,0 +1,23 @@
+.setting {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 33%;
+    
+    &__label {
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    
+    &__input {
+        max-width: 100%;
+        border-radius: 3px;
+        padding: 5px 10px;
+        margin-right: 10px;
+        border: 2px solid #3292bb;
+        outline: none;
+        background: #30669c;
+        color: #fff;
+    }
+}

@@ -1,3 +1,5 @@
+import './InfoItem.scss';
+
 interface InfoItemProps {
   value: string;
 }

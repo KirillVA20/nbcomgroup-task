@@ -1,3 +1,4 @@
+import './FormInput.scss';
 import { useRef } from "react";
 
 interface FormInputProps {

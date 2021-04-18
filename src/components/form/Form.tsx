@@ -1,7 +1,8 @@
+import './Form.scss';
 import { CartData } from "../../types";
-import FormInput from "./FormItems/FromInput";
-import FormSelect from "./FormItems/FormSelect";
-import FormSelectIconProps from "./FormItems/FormSelectIcon";
+import FormInput from "./FormItems/FromInput/FormInput";
+import FormSelect from "./FormItems/FormSelect/FormSelect";
+import FormSelectIconProps from "./FormItems/FormSelectIcon.scss/FormSelectIcon";
 import AddButton from "../addButton/AddButton";
 
 interface StateActionProps {

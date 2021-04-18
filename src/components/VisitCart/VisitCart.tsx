@@ -1,3 +1,4 @@
+import './VisitCart.scss';
 import { CartData } from "../../types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -7,7 +8,8 @@ import {
   faHandSpock,
   faStreetView,
 } from "@fortawesome/free-solid-svg-icons";
-import InfoItem from "./InfoItem";
+import InfoItem from "./InfoItem/InfoItem";
+
 
 type VisitCartProps = CartData;
 

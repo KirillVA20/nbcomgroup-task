@@ -1,0 +1,25 @@
+.add-button {
+    padding: 10px;
+
+    &__button {
+        background: #0089ff;
+        border: none;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
+
+        &--blocked {
+            pointer-events: none;
+            cursor: auto;
+            background: #c4c4c4;
+        }
+
+    }
+
+    &__message {
+        color: #fff;
+        font-weight: 600;
+    }
+}

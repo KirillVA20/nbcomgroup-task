@@ -1,5 +1,6 @@
+import './App.scss';
 import { useReducer } from "react";
-import VisitCart from "./cart/VisitCart";
+import VisitCart from "./VisitCart/VisitCart";
 import Form from "./form/Form";
 import { CartData, FormAction } from "../types";
 import { ActionType } from "../const";

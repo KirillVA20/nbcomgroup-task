@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "../style/style.scss";
+import "../sass/main.scss";
 import "@polymer/font-roboto/roboto.js";
 import App from "../components/App";
 

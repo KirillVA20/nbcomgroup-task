@@ -1,3 +1,4 @@
+import './AddButton.scss';
 import { useState } from "react";
 import { CartOrderTimer } from "../../const";
 
