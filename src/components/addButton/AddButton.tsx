@@ -5,22 +5,22 @@ import { CartOrderTimer } from "../../const";
 interface AddButtonProps {
   name: string;
   number: string;
-  adress: string;
+  address: string;
 }
 
 /**
  * Компонент имитации оформления визитки
  * @param name - Имя
  * @param number - Номер телефона
- * @param adress - Адресс
+ * @param address - Адресс
  */
-const AddButton = ({ name, number, adress }: AddButtonProps) => {
+const AddButton = ({ name, number, address }: AddButtonProps) => {
   //Состояние отвечающие за статус оформления визитки
   const [cartIsOrder, setCartIsOrder] = useState(false);
 
   //Проверка на пустоту данных
   const checkEmptySetting = () => {
-    return !!name && !!number && !!adress;
+    return !!name && !!number && !!address;
   };
 
   //Имитация оформления визитки

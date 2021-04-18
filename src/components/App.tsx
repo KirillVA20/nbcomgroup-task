@@ -12,7 +12,7 @@ const initialState: InitialStateProps = {
   surname: "Воронкин",
   name: "Кирилл",
   number: "+7 (999) 999-99-99",
-  adress: "Манежный пер., 2",
+  address: "Манежный пер., 2",
   position: "Веб-разработчик",
   logoId: "faTree",
   logoPosition: "left",

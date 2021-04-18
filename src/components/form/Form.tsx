@@ -16,7 +16,7 @@ type FormProps = CartData & StateActionProps;
  * @param surname - Фамилия
  * @param name - Имя
  * @param number - Номер телефона
- * @param adress - Адресс
+ * @param address - Адресс
  * @param position - Должность
  * @param logoId - id логотипа
  * @param logoPosition - Позиционирование логотипа
@@ -27,7 +27,7 @@ const Form = ({
   surname,
   name,
   number,
-  adress,
+  address,
   position,
   logoId,
   logoPosition,
@@ -59,8 +59,8 @@ const Form = ({
       placheholder: "Введите должность",
     },
     {
-      value: adress,
-      name: "adress",
+      value: address,
+      name: "address",
       lang: "Адрес",
       placheholder: "Введите адрес",
     },
@@ -117,7 +117,7 @@ const Form = ({
                 />
               </div>
             </div>
-            <AddButton name={name} number={number} adress={adress} />
+            <AddButton name={name} number={number} address={address} />
           </fieldset>
         </form>
       </div>

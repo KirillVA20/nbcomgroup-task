@@ -19,7 +19,7 @@ type VisitCartProps = CartData;
  * @param surname - Фамилия
  * @param name - Имя
  * @param number - Номер телефона
- * @param adress - Адресс
+ * @param address - Адресс
  * @param position - Должность
  * @param logoId - id логотипа
  * @param logoPosition - Позиционирование логотипа
@@ -29,7 +29,7 @@ const VisitCart = ({
   name,
   surname,
   number,
-  adress,
+  address,
   position,
   logoId,
   logoPosition,
@@ -48,14 +48,14 @@ const VisitCart = ({
     <section className="visit-cart">
       <div className="visit-cart__content">
         {/* Логотип */}
-        <div className={`visit-cart__logo visit-cart__logo--${logoPosition}`}>
+        <div className={`visit-cart__logo visit-cart__logo_${logoPosition}`}>
           <div className="visit-cart__logo-inner">
             <FontAwesomeIcon icon={iconsObj[logoId]} />
           </div>
         </div>
 
         {/* Информация */}
-        <div className={`visit-cart__info visit-cart__info--${infoPosition}`}>
+        <div className={`visit-cart__info visit-cart__info_${infoPosition}`}>
           {/* Имя и фамилия */}
           <div className="visit-cart__fullname">
             <span className="visit-cart__name">{name}</span>
@@ -66,7 +66,7 @@ const VisitCart = ({
           <InfoItem value={position} />
 
           {/* Адресс */}
-          <InfoItem value={adress} />
+          <InfoItem value={address} />
 
           {/* Адресс */}
           <InfoItem value={number} />
