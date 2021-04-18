@@ -7,6 +7,7 @@ import {
   faHandSpock,
   faStreetView,
 } from "@fortawesome/free-solid-svg-icons";
+import InfoItem from "./InfoItem";
 
 type VisitCartProps = CartData;
 
@@ -60,19 +61,13 @@ const VisitCart = ({
           </div>
 
           {/* Должность */}
-          <div className="visit-cart__position">
-            <span>{position}</span>
-          </div>
+          <InfoItem value={position} />
 
           {/* Адресс */}
-          <div className="visit-cart__adress">
-            <span>{adress}</span>
-          </div>
+          <InfoItem value={adress} />
 
-          {/* Номер телефона */}
-          <div className="visit-cart__number">
-            <span>{number}</span>
-          </div>
+          {/* Адресс */}
+          <InfoItem value={number} />
         </div>
       </div>
     </section>
