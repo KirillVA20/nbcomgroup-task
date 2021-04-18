@@ -34,11 +34,11 @@ const AddButton = ({ name, number, adress }: AddButtonProps) => {
     : "";
 
   return (
-    <section className="add-button">
+    <div className="add-button">
       <div className="add-button__container">
         {!cartIsOrder ? (
           <button
-            type="button"
+            type="submit"
             className={`add-button__button ${addButtonClassName}`}
             onClick={orderCart}
           >
@@ -50,7 +50,7 @@ const AddButton = ({ name, number, adress }: AddButtonProps) => {
           </div>
         )}
       </div>
-    </section>
+    </div>
   );
 };
 

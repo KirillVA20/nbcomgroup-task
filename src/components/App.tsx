@@ -1,7 +1,6 @@
 import { useReducer } from "react";
 import VisitCart from "./cart/VisitCart";
 import Form from "./form/Form";
-import AddButton from "./addButton/AddButton";
 import { CartData, FormAction } from "../types";
 import { ActionType } from "../const";
 
@@ -51,8 +50,6 @@ const App = () => {
       <VisitCart {...state} />
 
       <Form {...state} changeSetting={changeSetting} />
-
-      <AddButton {...state} />
     </main>
   );
 };
